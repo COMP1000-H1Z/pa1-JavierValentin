@@ -1,1 +1,17 @@
+package Javier16;
+import java.util.Scanner;
+public class Javier_AVR {
 
+	public static void main(String[] args) {
+	
+		Scanner input = new Scanner(System.in);
+	int number;
+	
+	do {
+		System.out.print("Enter an integer between 1 and 100");
+		number = input.nextInt();
+	}	while (number < 1 || number >100);
+	System.out.println("You enter a valid number: " + number);
+		input.close();
+	}
+}
